@@ -256,13 +256,26 @@ footer {
       border-right: none;
       padding-right: 0;
   }
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+
+
+@media (max-width: 767px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        max-width: 90%; /* Ajuste de largura para celulares */
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Ajuste de tamanho da fonte */
+    }
+
+    .header p {
+        font-size: 1rem; /* Ajuste de tamanho da fonte */
+    }
 }
-
-
 
 
