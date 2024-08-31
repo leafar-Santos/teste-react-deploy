@@ -257,6 +257,9 @@ footer {
       padding-right: 0;
   }
 
+  .hidden-on-small {
+    display: inline-block;
+}
 
 @media (max-width: 767px) {
     .services {
@@ -269,13 +272,33 @@ footer {
         margin-bottom: 20px;
     }
 
-    .header h1 {
-        font-size: 1.5rem; /* Ajuste de tamanho da fonte */
-    }
+    .header {
+      padding: 15px;
+      background-color: #f0f0f0; /* Fundo ajustado para dispositivos móveis */
+  }
 
-    .header p {
-        font-size: 1rem; /* Ajuste de tamanho da fonte */
-    }
+  .header h1 {
+      font-size: 1.8rem; /* Reduz tamanho da fonte para dispositivos móveis */
+  }
+
+  .header p {
+      font-size: 1rem; /* Reduz tamanho da fonte para dispositivos móveis */
+      margin-top: 5px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 0.9rem;
+}
+
+/* Oculta itens "Blog" e "Sobre Nós" em telas pequenas */
+.hidden-on-small {
+    display: none;
+}
 }
 
 
